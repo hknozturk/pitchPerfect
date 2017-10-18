@@ -68,7 +68,7 @@ class HomeViewController: UIViewController, AVAudioRecorderDelegate {
              performSegue(withIdentifier: "playbackSegue", sender: audioRecorder.url)
         }else {
             let alert = UIAlertController(title: "Alert", message: "Sound couldn't recorded", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: Alerts.DismissAlert, style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: alert.DismissAlert, style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
